@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condionales</title>
+</head>
+<body>
+    <h1>Condionales</h1>
+
+    <script>
+
+        //Condicional if
+        
+        let edad = 27;
+
+        if(edad > 18)
+        {
+            console.log('Es mayor de 18!');
+        }
+        else if(edad < 18)
+        {
+            console.log('Eres menor de 18!');
+        }
+        else
+        {
+            console.log('Tienes exactamente 18!');
+        }
+
+        //Operadores && ||
+        let correo = 'angel@gmail.com';
+        let pass = '123456';
+        let usuario = 'angel';
+        //  &&
+        if(correo == 'angel@gmail.com' && pass == '123456')
+        {
+            console.log('Bienvenido!');
+        }
+        //  ||
+        if(correo == 'angel@gmail.com' || usuario == 'angel')
+        {
+            console.log('Bienvenido!');
+        }
+
+        //Condicional switch
+        let numero = 3;
+
+        switch(numero)
+        {
+            case 1:
+            case 3:
+            case 5:
+                console.log('el numero es impar');
+                break;
+            case 2:
+            case 4:
+                console.log('el numero es par');
+                break;
+            default:
+                console.log('el numero no esta en el rango del 1 al 5');
+                break;
+        }
+
+        //Ejemplo de par e impar
+        let num = 23;
+
+        if(num % 2 == 0)
+            console.log('elnumero es par'); 
+        else
+            console.log('elnumero es impar'); 
+
+    </script>
+</body>
+</html>

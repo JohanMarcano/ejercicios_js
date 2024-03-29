@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+</head>
+<body>
+    
+    <h1>String</h1>
+
+    <script>
+
+        //declaracion 
+        let texto = 'Hola Mundo';
+
+        //length
+        let cantCaracteres = texto.length;
+        console.log('Longitud:', cantCaracteres);
+
+        //indexOf
+        let str = 'Hoy es un buen dia';
+        let pos = str.indexOf('es');    //si no encuentra retorna -1
+        console.log('indexOf(es): ', pos);
+        
+        //slice()
+        let str2 = 'Manzana, Banana, Sandia';
+        let res2 = str2.slice(9, 15);
+        console.log('slice(9,15):', res2);
+        
+        //replace()
+        let str3 = 'Hola Jose';
+        let res3 = str3.replace('Jose', 'Carlos');
+        console.log('replace(Jose, Carlos):', res3);
+
+        //toLowerCase()
+        let text1 = 'Hola Mundo!';
+        let text2 = text1.toLowerCase();
+        console.log('toLowerCase():', text2);
+
+        //toUpperCase()
+        let text3 = 'Hola Mundo!';
+        let text4 = text3.toUpperCase();
+        console.log('toUpperCase():', text4);
+        
+        //trim()
+        let str4 = '    Hola Mundo!   ';
+        console.log('trim():', str4.trim());
+
+        //chartAt()
+        let str5 = 'Diego Martinez';
+        let c1 = str5.charAt(0);
+        console.log('chartAt(0):', c1);
+        
+        //split()
+        let str6 = 'Jose Perez';
+        let arrayNombres = str6.split(' ');
+        console.log('split( ): ', arrayNombres);
+        
+        //ejemplo:
+        console.log(arrayNombres[0] + ' ' + arrayNombres[1].charAt(0) + '.');
+
+    </script>
+
+</body>
+</html>

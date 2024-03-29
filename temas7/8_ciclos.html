@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciclos</title>
+</head>
+<body>
+    
+    <h1>Ciclos</h1>
+
+    <script>
+
+       //while
+       
+       console.log('ciclo while');
+
+       let n1 = 1;
+
+       while(n1 <= 10)
+       {
+           console.log(n1);
+           n1++;
+       }
+
+       //do-while
+       console.log('ciclo do-while');
+
+       let n2 = 1;
+
+       do
+       {
+            console.log(n2);
+            n2++;
+       }while(n2 <= 10);
+
+       //for
+
+       console.log('ciclo for');
+
+       for(let n3 = 1; n3 <= 10; n3++)
+       {
+          console.log(n3);
+       }
+
+       //recorrido de array
+
+       let numeros = [1,2,3,4,5];
+
+       console.log('ciclo for, recorre arreglo con for');
+
+       for(let i = 0; i < numeros.length; i++)
+            console.log(numeros[i]);
+
+        //ciclo for, recorre arreglo con for in
+        for(let num in numeros)
+            console.log(num);
+
+        //break y continue
+
+        console.log('ciclo for - break');
+
+        for(let n4 = 1; n4 <= 10; n4++)
+        {
+            console.log(n4);
+
+            if(n4 == 5)
+                break;
+        }
+
+        console.log('ciclo for - continue');
+
+        for(let n5 = 1; n5 <= 10; n5++)
+        {
+            if(n5 == 5)
+                continue;
+
+            console.log(n5);
+        }
+       
+    </script>
+
+</body>
+</html>

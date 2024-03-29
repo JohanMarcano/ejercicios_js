@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date</title>
+</head>
+<body>
+        <h1>Date</h1>
+
+        <script>
+
+            //declaracion
+            let fecha = new Date();
+
+            console.log('fecha:', fecha);
+            console.log('getFullYear():', fecha.getFullYear());             //2024
+            console.log('getMont():', fecha.getMonth());                    //0-11
+            console.log('getDate():', fecha.getDate());                     //1-31
+            console.log('getHours():', fecha.getHours());                   //0-23
+            console.log('getMinutes():', fecha.getMinutes());               //0-59
+            console.log('getSeconds():', fecha.getSeconds());               //0-59
+            console.log('getMilliseconds():', fecha.getMilliseconds());     //0-999
+            console.log('getDay():', fecha.getDay());                       //0-6
+            
+            let fechaFuturo = new Date('2024-07-20 07:45');
+
+        </script>
+</body>
+</html>

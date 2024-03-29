@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetTimeout y SetInterval</title>
+</head>
+<body>
+    
+    <h1>SetTimeout y SetInterval</h1>
+
+    <script>
+
+        //SetTimeout
+        let idTimeOut = setTimeout(() => {
+            alert('hola');
+        }, 3000);
+
+        //clearTimeout(idTimeOut);
+
+        //SetInterval
+
+        let cont = 0;
+
+        let idInterval = setInterval(() => {
+            console.log(cont);
+            cont++;
+
+            if(cont == 3)
+                clearInterval(idInterval);
+
+        }, 1000);
+
+    </script>
+</body>
+</html>

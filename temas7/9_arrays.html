@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+    
+    <h1>Arrays</h1>
+
+    <script>
+
+        //incializar
+        let colores = ['azul', 'rojo', 'verde'];
+        let colores2 = new Array('amarillo', 'negro', 'azul');
+
+        //obtener data
+        let color1 = colores[0];
+        console.log('Primer valor del array colores:', color1);
+
+        //actualizar data
+        colores2[0] = 'naranja';
+
+        //recorrer array
+        console.log('Data de colores:');
+        for(let i = 0; i < colores.length; i++)
+            console.log(colores[i]);
+
+        //ordenar
+        colores2.sort();
+        console.log('Colores2 ordenado:', colores2);
+
+        //agregar data al final
+        colores.push('blanco');
+        console.log('Agregando un dato al final:', colores);
+
+        //agregar data al inicio
+        colores.unshift('morado');
+        console.log('Agregando un dato al inicio:', colores);
+        
+        //eliminar el ultimo elemento
+        colores.pop();
+        console.log('Eliminando un dato al final:', colores);
+            
+        //eliminar el primer elemento
+        colores.shift();
+        console.log('Eliminando un dato al incio:', colores);
+
+        //muestra la data como un string
+        console.log('Muestra la data como string:', colores.toString());
+
+        //actualizacion de data en una posicion dada
+        colores.splice(2, 0, 'marron', 'violeta');
+        console.log('Agrega datos en la posicion indicada:', colores);
+
+        //concatenar
+        let masColores = colores.concat(colores2);
+        console.log('Concatena dos arrays:', masColores);
+
+        //cortar
+        let menosColores = colores.slice(0, 2);
+        console.log('Genera un array mas pequeno:', menosColores);
+
+        // let array2 = [];
+
+        // for(let i = 0; i < 2; i++)
+        // {
+        //     array2.push(colores[i]);
+        // }
+
+        //revierte la informacion del array
+        colores.reverse();
+        console.log('Invierte la posicion de la data:', colores);
+  
+    </script>
+
+</body>
+</html>

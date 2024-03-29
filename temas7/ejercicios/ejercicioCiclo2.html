@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio ciclos 2</title>
+</head>
+<body>
+    <h1>Ejercicio ciclos 2</h1>
+
+    <script>
+
+        //Mostrar los numeros de 10 al 1 por consola
+
+        for(let i = 10; i >= 1; i--)
+        {
+            console.log(i);
+        }
+
+        //Mostrar los numeros de 2 en 2 desde 2 hasta 10
+
+        for(let j = 2; j <= 10; j += 2)
+        {
+            console.log(j);
+        }
+
+        //Muestra los multiplos de 3 desde 3 hasta 21
+
+        for(let i = 1; i <= 21; i++)
+        {
+            if(i % 3 == 0)
+                console.log(i);
+        }
+
+        //Muestra los numeros impares entre 1 y 10 utilizando while
+
+        let n = 1;
+
+        while(n <= 10)
+        {
+            if(n % 2 != 0)
+                console.log(n);
+            
+            n++;
+        }
+
+        //Muestra los numeros multiplos de 5 entre 5 y 100 utilizando do-while
+
+        let n2 = 1;
+
+        do
+        {
+            if(n2 % 5 == 0)
+                console.log(n2);   
+
+            n2++;
+        }while(n2 <= 100);
+
+    </script>
+</body>
+</html>

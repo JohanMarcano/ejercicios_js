@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POO</title>
+</head>
+<body>
+    
+    <h1>POO</h1>
+
+    <script>
+
+        //Objeto nativo
+        let persona = new Object();
+        persona.nombre = 'Jose';
+
+        console.log(persona.nombre.length);
+
+        let persona2 = {
+            nombre: 'Ana',
+            edad: 17,
+            estaCasada: true
+        };
+
+        console.log(persona2);
+        
+        //POO
+
+        //creacion de clase
+        class Casa {
+
+            //atributos
+            //constructor
+            constructor(metros, direccion, ciudad)
+            {
+                this.metros = metros;
+                this.direccion = direccion;
+                this.ciudad = ciudad;
+            }
+
+            //metodos
+            getDireccion()
+            {
+                return this.direccion + ' ' + this.ciudad;
+            }
+
+            toString()
+            {
+                return 'Metros: ' + this.metros + ', Direccion: ' + this.direccion + ', Ciudad: ' + this.ciudad;
+            }
+        }
+
+        //instanciar un objeto
+        let casa1 = new Casa(65, 'calle 12', 'Bogota');
+        let casa2 = new Casa(70, 'calle 2', 'Caracas');
+
+        console.log(casa1);
+        console.log(casa2);
+
+        console.log('Direccion casa 1:', casa1.getDireccion());
+        console.log('Direccion casa 2:', casa2.getDireccion());
+
+        console.log('Info casa 1:', casa1.toString());
+        console.log('Info casa 2:', casa2.toString());
+        
+        //herencia
+        class CasaIndividual extends Casa {
+
+            //constructor
+            constructor(metros, direccion, ciudad, metrosJardin, piscina)
+            {
+                super(metros, direccion, ciudad);  //llama al constructor de su clase padre
+                this.metrosJardin = metrosJardin;
+                this.piscina = piscina;
+            }
+
+            toString()
+            {
+                return super.toString() + ', Jardin: ' + this.metrosJardin + ', Piscina: ' + this.piscina;
+            }
+        }
+
+        //cracion de objeto hijo
+        let casaInd1 = new CasaIndividual(70, 'calle 1', 'Bogota', 20, true);
+        console.log(casaInd1);
+        console.log('Info de la casaInd1:', casaInd1.toString());
+
+    </script>
+</body>
+</html>

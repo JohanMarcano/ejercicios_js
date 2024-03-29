@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio ciclo 1</title>
+</head>
+<body>
+    <h1>Ejercicio ciclo 1</h1>
+
+    <script>
+
+        //Crea una funcion que dado un array se verifique si la palabra indicada 
+        //esta dentro del array.
+
+        let arreglo = ['azul', 'rojo', 'verde', 'morado'];
+        let palabra = 'verde';
+
+        function buscar(arreglo, palabra)
+        {
+            let existe = false;
+
+            for(let i = 0; i < arreglo.length; i++)
+            {
+                if(arreglo[i] == palabra)
+                {
+                    console.log('si existe');
+                    existe = true;
+                }
+            }
+
+            if(!existe)
+            {
+                console.log('no existe');
+            }
+        }
+
+    </script>
+
+</body>
+</html>

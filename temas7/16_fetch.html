@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fecth</title>
+</head>
+<body>
+    <h1>Fetch</h1>
+
+    <p id="info"></p>
+
+    <script>
+
+        fetch('https://jsonplaceholder.typicode.com/todos/1')
+        .then(res => res.json())
+        .then(data => {
+            document.getElementById('info').innerHTML = 'Id: ' + data.id + ', Titulo: ' + data.title;
+        })
+        .catch(error => {
+            document.getElementById('info').innerHTML = 'No se puedo caragar la data';
+        });
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Formulario</h1>
+
+    <input id="nombre" type="text"> 
+    <br>
+    <br>
+    <select id="tipos">
+        <option value="1">tipo 1</option>
+        <option value="2">tipo 2</option>
+        <option value="3">tipo 3</option>
+    </select>
+    <br>
+    <br>
+    <input type="radio" value="M" name="genero" checked>Masculino
+    <input type="radio" value="F" name="genero">Femenino
+    <br>
+    <br>
+
+    <input type="checkbox" value="condiciones" id="condiciones">Aceptar condiciones
+    <br>
+    <br>
+
+    <input type="email" id="correo">
+    <br>
+    <br>
+
+    <button onclick="tomar()">tomar</button>
+
+    <script>
+
+        function tomar()
+        {
+            //campos input(text, number, email, password)
+            let campo = document.getElementById('nombre').value;  // decuelve un string //parseInt(document.getElementById('nombre').value), parseFloat(document.getElementById('nombre').value)
+            console.log('valor del input:', campo);
+
+            //select
+            let select = document.getElementById('tipos').value;  //devuelve el valor seleccionado
+            console.log('valor del select:', select);
+
+            //texto con opciones
+            let combo = document.getElementById('tipos');
+            let texto = combo.options[combo.selectedIndex].text;  //devuelve el texto de la opcion seleccionada
+            console.log('texto del select:', texto);
+            
+            //radio
+            let radios = document.getElementsByName('genero');   //devuelve un array con todos los elementos con el nombre = 'genero'
+
+            let seleccionado = '';
+
+            for(let radio of radios)
+                if(radio.checked)
+                    seleccionado = radio.value;
+
+            console.log('valor del radio: ', seleccionado);
+            
+            //checkbox
+            let condicion = document.getElementById('condiciones');
+            
+            if(condicion.checked)
+                console.log('Acepto las condiciones');
+            else
+                console.log('Debe aceptar las condiciones');
+            
+            //Expresion regular
+            let correo = document.getElementById('correo').value;
+
+            let patt = /^([a-z0-9_]+)@([a-z]+)\.([a-z]{2,6})$/;     //declaracion de la Expresion Regular
+
+            if(patt.test(correo))
+                console.log('correo valido');
+            else
+                console.log('correo invalido');
+        }
+
+    </script>
+</body>
+</html>

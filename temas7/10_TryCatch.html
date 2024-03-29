@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Try Catch</title>
+</head>
+<body>
+    
+    <h1>Try Catch</h1>
+
+    <script>
+        /*
+            try 
+            {
+                Código a probar
+            }
+            catch(err) 
+            {
+                Código para manejar el error
+            }
+
+        */
+
+        //RangeError
+        let num = 10.3245315;
+
+        try
+        {
+            let num2 = num.toPrecision(500);  //muestra 4 digitos
+            console.log(num2);
+        }
+        catch(err)
+        {
+            console.log('Hubo un problema');
+        }
+
+        let num3 = num.toFixed(2);      //muestra dos decimales
+        console.log(num3);
+        
+        //ReferenceError
+        let x;
+
+        try
+        {
+            x = y + 1;
+            console.log(x);
+        }
+        catch(err)
+        {
+            console.log('Hubo un error');
+        }
+
+        //TypeError
+        let num4 = 1;
+
+        try
+        {
+            let num5 = num4.toUpperCase();
+            console.log(num5);
+        }
+        catch(err)
+        {
+            console.log(err.name);
+            console.log(err.message);
+        }
+
+    </script>
+</body>
+</html>

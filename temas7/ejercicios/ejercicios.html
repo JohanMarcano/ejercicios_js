@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJERCICIO NUEVOS</title>
+</head>
+<body style="background-color: #5e596e; color: white;">
+
+    <h3>EJERCICIO NUEVOS</h3>
+
+    <p id="no35"></p>
+    <p id="no37"></p>
+    <p id="no38"></p>
+    <p id="no39"></p>
+
+    <script>
+
+        // EJERCICIO #35
+        /*
+        Colocar en una variable el texto "Hola como estas?", luego verificar si el texto tiene mas de 
+        10 caracteres, de ser asi, imprimir por pantalla: "El texto es largo", caso contrario, "El texto es corto".
+        (Pureba hacer la misma operacion pero con una variable que tenga el texto: "Hola")
+        */
+
+        let text = "Hola como estas?";
+        let text2 = "Hola";
+
+        if (text.length >= 10)
+            console.log("El texto es largo");
+        else 
+            console.log("El texto es corto"); 
+        
+        if (text2.length >= 10)
+            console.log("El texto es largo");
+        else 
+            console.log("El texto es corto"); 
+
+
+        // EJERCICIO #36
+        /*
+        Crear un variable numerica y darle un valor. Luego, evaluar con sentencia IF si el
+        valor es igual a 10, dicho caso mostrar en pantalla "El valor es 10". Sino, 
+        preguntar si el valor es menor o igual a 9, en dicho caso mostrar en pantalla
+        "Es un numero muy pequeño". En caso contrario (else) mostrar: "El numero es grande".
+        */
+
+        let x = Math.random();
+        let num = Math.ceil(x * 10);
+        console.log('El numero es: ' + x);
+        console.log('El numero es: ' + num);
+
+        if (num == 10) {
+            console.log('El número es 10');
+        } else if (num <= 9) {
+            console.log('El número es muy pequeño');
+        } else {
+            console.log('El número es grande');
+        }
+        
+
+        // EJERCICIO #37
+        /*
+        Tomar la fecha actual y obtener el dia de la semana (0-6), luego con un SWICTH 
+        mostrar por pantalla el día segun sea el caso obtenido. Ejemplo: para el valor
+        0 deberia mostrar: "Hoy es Domingo" y para el 1 "Hoy es Lunes"...
+        */
+
+        let fecha = new Date();
+        let x1 = fecha.getDay();
+        console.log('Hoy es el día: ' + fecha);
+        console.log('Hoy es el día: ' + x1);
+
+        switch(x1)
+        {
+            case 0:
+                document.getElementById('no37').innerHTML = "Hoy es el día domingo"
+                console.log('Hoy es el día domingo');
+                break;
+            case 1:
+            document.getElementById('no37').innerHTML = "Hoy es el día lunes"
+                console.log('Hoy es el día lunes');
+                break;
+            case 2:
+            document.getElementById('no37').innerHTML = "Hoy es el día martes"
+                console.log('Hoy es el día martes');
+                break;
+            case 3:
+            document.getElementById('no37').innerHTML = "Hoy es el día miercoles"
+                console.log('Hoy es el día miercoles');  
+                break; 
+            case 4:
+            document.getElementById('no37').innerHTML = "Hoy es el día jueves"
+                console.log('Hoy es el día jueves');   
+                break;        
+            case 5:
+            document.getElementById('no37').innerHTML = "Hoy es el día viernes"
+                console.log('Hoy es el día viernes');
+                break;
+            case 6:
+            document.getElementById('no37').innerHTML = "Hoy es el día sabado"
+                console.log('Hoy es el día sabado');
+                break;                
+            default:
+                document.getElementById('no37').innerHTML = "Debes elegir un día de la semana"
+                console.log('Debes elegir un día de la semana');
+                break;
+        }
+
+
+        // EJERCICIO #38
+        /*
+        Imprimir por pantalla los numeros del 1 al 20 utilizando el ciclo for.
+        */
+
+        console.log('ciclo for - ejercicio No38');
+
+        for(let n3 = 1; n3 <= 20; n3++)
+        {
+            document.getElementById('no38').innerHTML = "Imprime los números menores de: " + n3;
+            console.log(n3);
+        }
+
+        
+        // EJERCICIO #39
+        /*
+        Imprimir en pantalla los numeros del 20 al 1 utilizando el ciclo for
+        */ 
+
+        console.log('ciclo for 2 - ejercicio No39');
+
+        for(let n4 = 20; n4 >= 1; n4--)
+        {
+            document.getElementById('no39').innerHTML = "Imprime los números menores de: " + n4;
+            console.log(n4);
+        }    
+
+
+        // EJERCICIO #40
+        /*
+        Crear un vector de 5 colores y mostrar su contenido recorriendo el mismo con un ciclo for.
+        */
+
+        console.log('ciclo for 3 - ejercicio No40');
+
+        let colores = ['azul','rojo','amarillo','verde','naranja','marron'];
+
+        for(let i = 0; i < colores.length; i++){
+            console.log(colores[i]);
+        }
+
+
+        // EJERCICIO #41
+        /*
+        Imprimir por pantalla los numeros del 1 al 15 utilizando el ciclo while
+        */
+
+        console.log('Ejercicio #41 - ciclo while');
+
+        let n1 = 1;
+
+        while(n1 <= 15)
+        {
+            console.log(n1);
+            n1++;
+        }
+
+
+        // EJERCICIO #42
+        /*
+        Imprimir por pantalla los numeros del 1 al 30 utilizando el ciclo do-while.
+        */
+
+        console.log('ciclo do-while - ejercicio 42');
+
+        let n2 = 1;
+
+        do
+        {
+            console.log(n2);
+            n2++;
+        }while(n2 <= 30);
+
+        
+
+
+
+    </script>
+    
+</body>
+</html>

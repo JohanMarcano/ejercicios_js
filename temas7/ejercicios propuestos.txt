@@ -1,0 +1,285 @@
+1) Declarar e inicializar una variable string y mostrarla por pantalla.
+
+2) Declarar e inicializar una variable numerica (entera) y mostrarla por pantalla.
+
+3) Declarar dos variables (num1, num2) y asignar valores enteros a cada una. 
+   Luego efectuar la suma y mostrar el resultado por pantalla. 
+   (Los calculos deben ser guardados en sus respectivas variables antes de ser mostrados)
+
+3) Declarar dos variables (num1, num2) y asignar valores enteros a cada una. 
+   Luego efectuar la resta y la multiplicacion y mostrar el resultado por pantalla. 
+   (Los calculos deben ser guardados en sus respectivas variables antes de ser mostrados)
+
+4) Concatenar dos variables de tipo string y mostrar el resultado por pantalla. 
+   (utilizar el operador '+')
+
+5) Imprime tu nombre completo y tu edad por pantalla.
+
+6) Declarar dos variables (num1, num2) y asignar valores enteros a cada una. 
+   Luego efectuar la suma, la resta, la multiplicacion, la division, el exponente (num1 elevado a num2) 
+   y el modulo (num1 % num2). Luego, mostrar los resultados por pantalla. 
+   (Los calculos deben ser guardados en sus respectivas variables antes de ser mostrados)
+
+7) Declarar dos variables (num1, num2) y asignar valores enteros a cada una. 
+   Luego efectuar la suma y la resta. Luego, mostrar los resultados por consola (usando console.log()). 
+   (Los calculos deben ser guardados en sus respectivas variables antes de ser mostrados)
+
+8) Defina una variable 'x' y asignale el numero 2, luego multiplica ese valor por 3, incrementa 
+   su valor en una unidad, restale 1, elevala al cuadrado y sumale 5, finalmente decremente su 
+   valor en una unidad y muestrala por pantalla y también por consola.
+
+9) Un alumno ha sacado tres notas en sus tres examenes y desea saber su nota final.
+   Define tres variables y asignales las tres notas (7, 8, 6).
+   Calcular su nota final ((nota1 + nota2 + nota3) / cantidad de examenes)
+   Muestra por pantalla el mensaje: "Su nota final es: [NotaFinalCalculada]"
+
+10) Se quiere clacular el área de dos figuras:
+    La primera es un cuadrado. Define una varible llamada 'lado', asignale un valor de 2 y 
+    calcula su area (lado al cuadrado).
+    La segunda es un rectangulo. Define dos variables llamadas 'ladoA' y 'ladoB', asignales
+    los valores 2 y 4 respectivamente y calcula su area (ladoA por ladoB).
+    Finalmente muestra por pantalla el mensaje: "El area del cuadrado de lado 2 es: [AreaCuadrado]"
+    "El area del rectangulo de lados 2 y 4 es: [AreaRectangulo]".
+
+12) Crear una función llamada 'mostrar' que muestre el mensaje "Hola, que tal?" por consola. 
+     LLamar a dicha función para ejecutar su código.
+
+13) Crear una función que reciba un string como parámetro, luego concatenar
+     el mensaje "Esto se ha agregado." al string inicial y lo muestre por pantalla.
+     LLamar a dicha función para ejecutar su código.
+
+14) Crea una función que reciba un número y calcule el cuadrado del mismo, retornando el resultado.
+    LLamar a dicha funcion para ejecutar su codigo.
+
+15) Crear una 4 funciones (sumar, restar, multiplicar y dividir) que reciban dos valores por 
+   parametros y efectuen el calculo correspondiente (devolviendo dicho valor).
+   Probar todas la funciones mostrando por pantalla los resultados de cada calculo.
+
+16) Crea una funcion llamada calcula(), que reciba un parametro llamado 'num'.
+    La funcion aplicara los pasos descritos en el ejercicio (8) (ahora x sera num dentro de la
+    funcion). Se debe devolver el valor resultante.
+    Llama a la función, pasale una variable con valor 7 e imprime el resultado de la
+    función en pantalla.
+
+17) Crea un funcion que defina una array de 3 colores (Amarillo, Azul y Rojo), la funcion recibira
+    un parametro llamado 'posicion' y retornara el color del array segun la posicion pasada
+    por parametro. Ejemplo: Si recibe el valor 1 por parametro debera retornar Azul ya que es el color
+    en dicha posicion dentro del array.
+
+18) Crea un Objeto llamado auto que tenga los atributos: color, marca y placa.
+    Agrega una funcion dentro del objeto llamada 'mostrar' que devuelva el mensaje
+    de los tres atributos concatenados.
+    LLama a la funcion del objeto auto y muestra por pantalla sus atributos.
+
+19) Crea un campo input para agregar una palabra y boton al cual se le agregara el evento 'onclick'.
+    Dicho evento debe llamar a una funcion en nuestro javascript llamada 'muestra'. La funcion tomara
+    el valor del campo y lo mostrara dentro de una etiqueta 'p' en nuestra página.
+
+20) Crea un campo input para agregar tu nombre y otro para agregar tu edad. Agrega un boton con un
+    evento onclick que llame a una funcion llamada 'datos'. Dicha funcion tomara los valores de ambos 
+    campos y los mostrara por pantalla dentro de una etiqueta 'p'.
+
+21) Declarar una variable string y mostrar por pantalla su longitud.
+
+22) Utilizar un metodo de JS que nos permita saber la posicion de la PRIMERA coincidencia ("e") de un string
+   ("Hola mi nombre es rafael"). Mostrar la posicion devuelta por dicho metodo.
+
+---
+
+24) Tomar el string "Carro, Perro, Auto, Azul, Pera, Verde" y generar un nuevo string que contenga el valor
+    de las dos primeras palabras. Utilizando el metodo slice. Mostrar el nuevo string por consola.
+
+---
+
+26) Tomar el string "Mi programa en JS" e imprimir en pantalla el texto en mayúsculas y luego en minúsculas.
+
+---
+
+28) Separar el siguiente string: "Caballo-Gallina-Gato-Conejo" utilizando el metodo split para que en 
+    cada posición del array generado quede un solo animal. Luego mostrar en pantalla el animal que esta 
+    en la posición 2.
+
+29) Mostrar en pantalla el siguiente numero: 23.567 con solo dos decimales.
+
+30) Tomar dos variables string ("15.23" y "5.7") y realizar una suma, luego mostrar por pantalla el resultado
+    con un solo valor decimal.
+
+31) Definir un array que contenga 4 animales y luego:
+    - Mostrar la longitud del vector.
+    - Ordenar los animales del vector en orden alfabetico.
+    - Agregar un nuevo animal al final del vector.
+    - Agregar un nuevo animal al inicio del vector.
+    - Eliminar el último animal.
+    - Eliminar el animal de la primera posicion (posición 0)
+    - Crear un array con dos animales nuevos y concatenarlo con el primer vector.
+    - Agregar un nuevo animal en la tercara posicion del vector.
+    - Eliminar el segundo y tercer animal del vector.
+    - Mostrar todos los animales desde el último hasta el primero (orden inverso)
+
+32) Mostrar por pantalla la fecha actual con el siguiente formato: DD/MM/YYYY HH.MM
+
+33) Generar un numero aleatorio entre 10 y 50 y mostrarlo en pantalla.
+
+34) Crear un codigo que al presionar un boton se tome un valor de un campo numerico, luego evaluar 
+    si el numero es mayor o igual a 5, en cuyo caso se le sumara 3 y se mostrara en pantalla. 
+    Caso contrario, se le restara 2 y se mostrara en pantalla.
+
+35) Colocar en una variable el texto "Hola como estas?", luego verificar si el texto tiene mas de 
+    10 caracteres, de ser asi, imprimir por pantalla: "El texto es largo", caso contrario, "El texto es corto".
+    (Pureba hacer la misma operacion pero con una variable que tenga el texto: "Hola").
+
+36) Crear un variable numerica y darle un valor. Luego, evaluar con sentencia IF si el
+    valor es igual a 10, dicho caso mostrar en pantalla "El valor es 10". Sino, 
+    preguntar si el valor es menor o igual a 9, en dicho caso mostrar en pantalla
+    "Es un numero muy pequeño". En caso contrario (else) mostrar: "El numero es grande".
+
+37) Tomar la fecha actual y obtener el dia de la semana (0-6), luego con un SWICTH 
+    mostrar por pantalla el día segun sea el caso obtenido. Ejemplo: para el valor
+    0 deberia mostrar: "Hoy es Domingo" y para el 1 "Hoy es Lunes"...
+
+38) Imprimir por pantalla los numeros del 1 al 20 utilizando el ciclo for.
+
+39) Imprimir en pantalla los numeros del 20 al 1 utilizando el ciclo for.
+
+40) Crear un vector de 5 colores y mostrar su contenido recorriendo el mismo
+    con un ciclo for.
+
+41) Imprimir por pantalla los numeros del 1 al 15 utilizando el ciclo while.
+
+42) Imprimir por pantalla los numeros del 1 al 30 utilizando el ciclo do-while.
+
+43) Crear una función que reciba dos números enteros y muestre por pantalla 
+     el mayor de ellos. En caso de ser iguales, debe mostrar un mensaje 
+     indicándolo.   
+
+44) Crear una función que reciba tres números enteros y muestre por pantalla
+     dichos números en orden ascendente (de menor a mayor).
+
+45) Crea una función que calule el factorial de un número y retorne el resultado
+     (por ejemplo 3! = 3*2*1 = 6).
+
+46) Crear una función que reciba dos parámetros e imprima los números contenidos
+     entre ambos números de mayor a menor.
+
+47) Crear una función que reciba el nombre y la edad de una persona, si la edad
+     es mayor a 21 colocar un mensaje en pantalla que diga "Sr. " + nombrePersona,
+     caso contrario mostrar solo el nombre de la persona.
+
+48) Crear una función que reciba tres parámetros (dos numeros enteros y un char)
+     la función debe ejecutar la suma/resta/división/multiplicación, según lo
+     indicado por el tercer parámetro (+, -, /, *), de los dos números recibidos
+     y devolver el resultado.
+
+49) Crear una función que reciba un número entero y devuelva verdadero si dicho
+      número es par y falso si es impar o cero.
+
+50) Crear un función que permita saber si una persona debe pagar impuesto o no. 
+     La misma recibe un monto y si el mismo es mayor o igual a 3000 debe calcular 
+     el impuesto (7%) y mostrarlo por pantalla, caso contrario (2999-1000), calcular
+     impuesto (3%), caso contrario (999-0) mostrar mensaje de que no debe pagar.
+
+51) Se quiere saber cuanto pagar a un empleado. Crear una función que utilice un switch
+     para evaluar si se trata de un gerente, secretaria, contador. Según sea el caso
+     se mostrará el monto a pagar (1000, 850, 925) respectivamente.
+
+52) Crear un número aleatorio entre 1 y 10, si el mismo es menor a 5 mostrar que el usuario
+     ha perdido, si es igual a 5 que ha empatado y si es mayor a 5 que ha ganado.
+
+53) Pedir al usuario un número entre 1 y 12 y mostrarle el mes correspondiente según
+     el número introducido. Validar si no esta dentro del rango. Usar switch.
+
+54) Crear una función que reciba dos números y devuelva verdadero en caso de que el primero
+     sea multiplo del segundo, devolver falso en caso contrario.
+
+55) Pedir al usuario una letra y mostrar por pantalla si se trata de una vocal.
+
+56) Tomar el valor de un campo de texto y validar si el número ingresado es
+     mayor a 20, mostrar un mensaje en ambos casos. Se debe agregar un evento 
+     onclick a un botón para realizar dicha validación. Puede mostrarse el mensaje
+     mediente un alert() o ingresando el mismo dentro de una etiqueta.
+
+57) Agregar dos campos de texto y un botón, que mediante un evento onclik llame
+     a una función que permita saber que campo tiene el número mayor.
+
+58) Tomar el nombre y la edad introducidas en dos campos de texto y mediante un
+     evento onclick de un botón, tomar dicha data e ingresarla en un nuevo elemento
+     de tipo div para ser mostrado por pantalla.
+
+59) Crear un contador que se muestre en pantalla y que incremente su valor en uno
+     cada vez que se haga click en un botón. La función que realiza dicha operación
+     debe ser llamada mediante un evento onclick.
+
+60) Crear un elemento div con un mensaje inicial y cambiar dicho contenido al
+     detectar que el ratón esta sobre el elemento div, utilizando el evento
+     onmouseover.
+
+61) Obtener un elemento div con getElementById() y cambiar su contenido usando innerHTML
+
+---
+
+65) Agregar el evento "click" a un bóton utilizando addEventListener() y llamar a una funcion
+    "mortrar" que imprima el valor tomado de un campo input, dentro de un elemento div.
+
+66) Crear una funcion que reciba dos parametros e imprima los números contenidos
+    entre ambos numeros de mayor a menor.
+
+67)  Crear una función que reciba tres parametros (dos numeros enteros y un char)
+     la funcion debe ejecutar la suma/resta/division/multiplicacion, segun lo
+     indicado por el tercer parametro (+, -, /, *), de los dos numeros recibidos
+     y devolver el resultado.
+
+68)   Crear una funcion que reciba un numero entero y devuelva verdadero si dicho
+      número es par y falso si es impar o cero.
+
+69)  Agregar dos campos de texto y un boton, que mediante un evento onclik llame
+     a una funcion que permita saber que campo tiene el numero mayor.
+
+70)  Crear un calculadora, debe tener dos campos de texto para los dos numeros
+     que se desean utilizar y 4 botones con sus respectivos signos de suma, resta,
+     multiplicacion y division. Cada botón debera llamar a su funcion correspondiente
+     y colocar en un elemento div el resultado. Utilizar el evento onclick para
+     cada boton de la calculadora.
+
+71) Crear un array con 5 numeros enteros, luego utilizar una funcion que recorra 
+    el contenido del array y devuelva el mayor valor encontrado.
+
+72) Crear una array con 10 notas de alumnos, luego utilizar una funcion que 
+    tome dichas notas y devuelva el promedio general del aula de clase.
+
+73) Crear un array con 7 numeros aleatorios entre 1 y 15, luego utilizar una funcion
+    que muestre el contenido del array en orden.
+
+    74) Crear dos arrays, uno de 5 posiciones con los valores (1,3,5,7,9) y otro de
+    5 posiciones con los valores (2,4,6,8,10). Unir ambos contenidos en un tercer 
+    array y mostrarlo por pantalla. El nuevo array contendra 10 posiciones.
+
+75) Crear un array en el cual el valor de cada posicion sea el numero de su posicion
+    por 3. El array tendra una longitud de 10. Mostrar el contenido del mismo.
+
+76) Crear un array con 10 valores numericos, luego mostrar en pantalla solo las
+     posiciones pares del mismo.
+
+77) Crear un array con 10 valores numericos, luego calcular la suma de todos sus
+    valores y mostrar el resultado final por pantalla.
+
+78) Crear un array con 10 valores numericos, luego calcular la suma de los valores
+    en las posiciones pares y restarle el total de los valores en posiciones impares.
+    Mostrar el valor final por pantalla.
+
+---
+
+80) Crear un numero aleatorio entre 1 y 10, si el mismo es menor a 5 mostrar que el usuario
+    ha perdido, si es igual a 5 que ha empatado y si es mayor a 5 que ha ganado.
+
+81) Hacer uso del selector por nombre de etiqueta (TagName) <p> y agregar para tres 
+    etiquetas <p> los valores 1, 2 y 3 respectivamente de manera dinamica.
+
+82) Seleccionar un div por medio de su ID y cambiar el color de fondo del mismo.
+
+83) Crear una lista de "cosas por hacer". Se debe agregar un campo y boton para agregar un nuevo item a lista.
+    Al hacer click en el boton se debe agregar la nueva tarea a nuestra lista de cosas. Pero si pasamos el 
+    raton por encima de alguna tarea esta se debe ocultar/eliminar de la lista.
+
+84) Crear dos campos (correo y contrasena). Al presionar el boton 'enviar' verificar 
+    que ambos campos tienen data y que su longitud este entre 3 y 10 caracteres. Mostrar 
+    un mensaje si los campos son validos o no.

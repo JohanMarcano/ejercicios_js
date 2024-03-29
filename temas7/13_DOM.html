@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    
+    <h1>DOM</h1>
+
+    <p id="p1">Parrafo 1</p>
+    <p class="rojo">Parrafo 2</p>
+    <p class="rojo">Parrafo 3</p>
+
+    <div id="contenido">
+        <h2 class="rojo" id="subtitulo">sub titulo</h2>
+        <p id="p4">Parrafo 4</p>
+        <p class="verde">Parrafo 5</p>
+        <p class="verde">Parrafo 6</p>
+        <p>Parrafo 7</p>
+    </div>
+
+    <div id="formulario">
+        <label>Nombre: </label>
+        <input type="text" id="nombre">
+        <button onclick="mostrar()">mostrar</button>
+    </div>
+
+    <div id="contenido2">
+        <p id="fijo">fijo</p>
+    </div>
+
+    <button onclick="eliminar()">eliminar</button>
+    <button onclick="ocultar()">ocultar</button>
+    <button onclick="mostrar2()">mostrar2</button>
+
+    <script>
+
+        //Acceso a la data
+
+        //getElementById
+        let parrafo1 = document.getElementById('p1');
+        parrafo1.innerHTML = 'Nuevo mensaje desde JS';
+
+        //getElementsByTagName
+        let parrafos = document.getElementsByTagName('p');  //duelve un array
+        parrafos[1].style.color = 'blue';
+        
+        //getElementsByClassName
+        let parrafosRojos = document.getElementsByClassName('rojo');  // devuelve un array
+        parrafosRojos[1].style.color = 'red';
+        
+        //querySelector() y querySelectorAll()
+
+        //por id
+        let p1 = document.querySelector('#p1');
+
+        //por etiqueta
+        let p2 = document.querySelectorAll('p'); //duelve un array
+
+        //por clase
+        let p3 = document.querySelectorAll('.rojo');  //duelve un array
+
+        //Navegacion
+
+        let div = document.getElementById('contenido');
+
+        let padre = div.parentElement;    //devuelve el nodo padre
+        let hijos = div.children;         //devuelve un array de hijos
+
+        let primerHijo = div.firstChild;  //devuelve el primer hijo
+        let ultimoHijo = div.lastChild;   //devuelve el ultimo hijo
+
+        let p4 = document.getElementById('p4');
+        let anterior = p4.previousSibling;  //devuelve el hermano anterior
+        let siguiente = p4.nextSibling;     //devuelve el siguiente hermano 
+
+        //Propiedades de un nodo
+
+        //permite agregar estructura HTML y contenido
+        p4.innerHTML = '<span>Hola</span>';
+        //permite agregar contenido
+        p4.textContent = '<span>Hola</span>';
+
+        //funcion llamada por el boton mostrar
+        function mostrar()
+        {
+            let nombre = document.getElementById('nombre').value;
+            let contenido2 = document.getElementById('contenido2');
+
+            let nuevoParrafo = document.createElement('p');
+            nuevoParrafo.innerHTML = nombre;
+
+            contenido2.appendChild(nuevoParrafo);
+        }
+
+        //funcion llamada por el boton eliminar
+        function eliminar()
+        {
+            let p = document.getElementById('p4');
+            p.remove();
+        }
+
+        //funcion llamada por el boton ocultar
+        function ocultar()
+        {
+            let p = document.getElementById('p4');
+            p.style.display = 'none';
+        }
+
+        //funcion llamada por el boton mostrar2
+        function mostrar2()
+        {
+            let p = document.getElementById('p4');
+            p.style.display = 'block';
+        }
+        
+    </script>
+
+</body>
+</html>
