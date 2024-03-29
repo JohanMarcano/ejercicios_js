@@ -181,7 +181,85 @@
             n2++;
         }while(n2 <= 30);
 
+
+        // EJERCICIO #43
+        /*
+        Crear una función que reciba dos números enteros y muestre por pantalla el mayor de ellos. En caso de ser iguales, debe mostrar un mensaje indicándolo.   
+        */
         
+        function mostrar(fn1, fn2){
+            console.log("mostrando la funcion - ejercicio #43")                    
+        if (fn1 < fn2) {
+            return console.log(fn1 + ' ' + 'es menor que' + ' ' + fn2);
+        } else if (fn1 > fn2) {
+            return console.log(fn1 + ' ' + 'es mayor que' + ' ' + fn2);
+        } else {
+            return console.log('los números son iguales');
+        }
+        }
+
+        mostrar(10, 20)
+
+
+        // EJERCICIO #44 
+        /*
+        Crear una función que reciba tres números enteros y muestre por pantalla dichos números en orden ascendente (de menor a mayor).
+        */
+
+        function enteros(){
+            let numeros = ['2', '4', '7', '10'];
+
+            console.log('acá se muestran los números ordenadados ' + numeros.sort(function(a,b){return a - b} ) )
+        }
+
+        enteros()
+
+
+        // EJERCICIO #45
+        /*
+        Crea una función que calule el factorial de un número y retorne el resultado (por ejemplo 3! = 3*2*1 = 6).
+        */
+
+        function factorial(n) {
+        if (n === 0) {
+            return 1;
+        } else {
+            let result = 1;
+            for (let i = 1; i <= n; i++) {
+                result *= i;
+            }
+            return result;
+            }
+        }
+
+        // Ejemplo de uso
+        const numero = 5;
+        console.log(`El factorial de ${numero} es: ${factorial(numero)}`);
+
+
+        // EJERCICIO #46
+        /*
+        Crear una función que reciba dos parámetros e imprima los números contenidos entre ambos números de mayor a menor.
+        */
+
+        function numeros(n1, n2)
+        {
+            if (n1 < n2){
+                for(let i = n2; i >= n1; i--){
+                    console.log('El resultado es: ' + i);
+                }
+            }
+            else if (n1 > n2){
+                for(let i = n1; i <= n2; i--){
+                    console.log('El resultado es: ' + i);
+                }
+            }
+            else{
+                console.log('No se imprime nada')
+            }
+        }
+
+        numeros(15, 20)
 
 
 
